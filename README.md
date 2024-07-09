@@ -34,20 +34,20 @@ If you wish to place them in a different folder, be sure to update the MNIST_dat
 ## Instructions for Use
 
 For training a network:
-- Set test_mode = False on line 204 in 'Diehl&Cook_spiking_MNIST_B2.py'.
-- Set load_name = '' to use the random initial weights file as per the original code. Alternatively set to save_name to load starting weights from weights you have previously trained.
-- Set save_name to your preferred filename suffix for the saved weights and theta values. These will be saved to the 'weights/' folder.
-- Run the code.
+1. Set test_mode = False on line 204 in 'Diehl&Cook_spiking_MNIST_B2.py'.
+2. Set load_name = '' to use the random initial weights file as per the original code. Alternatively set to save_name to load starting weights from weights you have previously trained.
+3. Set save_name to your preferred filename suffix for the saved weights and theta values. These will be saved to the 'weights/' folder.
+4. Run the code.
 
 For testing a network.
-- Set test_mode = True on line 204 in 'Diehl&Cook_spiking_MNIST_B2.py'.
-- Set load_name = save_name to use your trained weights. Set load_name = '' to run a test using the pre-trained weights from the original repository.
-- Run the code.
-- Result files for classification will be saved in the 'activity/' folder with num_examples as a suffix. Be sure to back them up somewhere safe if you do not wish for these to be over-written every time a new simulation is performed.
+1. Set test_mode = True on line 204 in 'Diehl&Cook_spiking_MNIST_B2.py'.
+2. Set load_name = save_name to use your trained weights. Set load_name = '' to run a test using the pre-trained weights from the original repository.
+3. Run the code.
+4. Result files for classification will be saved in the 'activity/' folder with num_examples as a suffix. Be sure to back them up somewhere safe if you do not wish for these to be over-written every time a new simulation is performed.
 
 For evaluating a network's classification performance.
-- In 'Diehl&Cook_MNIST_evaluation_B2.py' set training_ending = 'x' and testing_ending = 'y' where x is the number of examples used during training and y is the number of examples used during testing of the network. The defaults are x = '60000' and y = '10000'. To run the faster demo version as per the original code, set both to '10000' and read the note below.
-- Run the code.
+1. In 'Diehl&Cook_MNIST_evaluation_B2.py' set training_ending = 'x' and testing_ending = 'y' where x is the number of examples used during training and y is the number of examples used during testing of the network. The defaults are x = '60000' and y = '10000'. To run the faster demo version as per the original code, set both to '10000' and read the note below.
+2. Run the code.
 
 Evaluating the network uses the highest average classifier as described in the paper. The original code (and the updated version) both default to using the results only from the test run (instead of both the training and testing runs) which can produce a slight increase in performance as noted in the original repository:
 
@@ -60,13 +60,13 @@ Training and testing a new network should result in around 89% with the given pa
 
 ## FAQ
 
-1. How can I run this for networks with a different number of neurons?
+- How can I run this for networks with a different number of neurons?
 Change n_e on line 40 to your desired number of neurons. Uncomment line 403 and comment out lines 404 and 405. This will force the code to generate random weights to initialise the network rather than load the pre-generated 400 weights from a file.
 
-2. Does this include all four of the STDP rules from the paper?
+- Does this include all four of the STDP rules from the paper?
 No, it only includes the Triplet STDP rule.
 
-2. What are the hyperparameters for the other rules?
+- What are the hyperparameters for the other rules?
 They were not included in the paper or the original code. It is not clear what the STDP_offset variable was originally intended for.  
 
 
