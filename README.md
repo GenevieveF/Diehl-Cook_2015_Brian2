@@ -1,8 +1,9 @@
-# "Unsupervised Learning of Digit Recognition using Spike-Timing-Dependent Plasticity" updated for Brian 2 and Python 3
+# Diehl & Cook 2015 Code for Brian 2
 
 This is an updated version of the original code written by Peter U. Diehl to work with Brian 2 and Python 3.
 
 Original Paper: Diehl & Cook, 'Unsupervised learning of digit recognition using spike-timing-dependent plasticity', 2015
+
 Link: https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/fncom.2015.00099/full
 
 Original Code: https://github.com/peter-u-diehl/stdp-mnist
@@ -17,7 +18,7 @@ This code requires Python 3, Brian 2, and the MNIST dataset.
 Installation instructions for Brain 2 can be found here: https://briansimulator.org/
 
 The MNIST dataest can be found here: http://yann.lecun.com/exdb/mnist/
-Create a folder named 'MNIST' alongside the python files and extract the four .gz dataset files into it.
+\nCreate a folder named 'MNIST' alongside the python files and extract the four .gz dataset files into it.
 If you wish to place them in a different folder, be sure to update the MNIST_data_path variable in the 'Diehl&Cook_spiking_MNIST_B2.py' and 'Diehl&Cook_MNIST_evaluation_B2.py' files. 
 
 
