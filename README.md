@@ -3,7 +3,7 @@
 This is an updated version of the original code written by Peter U. Diehl to work with Brian 2 and Python 3.
 
 Original Paper: Diehl & Cook, 'Unsupervised learning of digit recognition using spike-timing-dependent plasticity', 2015
-https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/fncom.2015.00099/full
+Link: https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/fncom.2015.00099/full
 
 Original Code: https://github.com/peter-u-diehl/stdp-mnist
 
