@@ -67,7 +67,10 @@ Change n_e on line 40 to your desired number of neurons. Uncomment line 403 and 
 No, it only includes the Triplet STDP rule.
 
 - *What are the hyperparameters for the other rules?*  
-They were not included in the paper or the original code. It is not clear what the STDP_offset variable was originally intended for.  
+They were not included in the paper or the original code. It is not clear what the STDP_offset variable was originally intended for.
+
+- *The simulation is very slow on my computer, how can I make it faster?*
+Consider changing the default clock step size for the simulation. This will have an effect on the precision of the numerical integration calculations but for values near the default will still produce similar accuracy results. More information on the default clock can be found in the Brian 2 documentation: https://brian2.readthedocs.io/en/stable/user/running.html
 
 
 ## Update Notes
@@ -81,8 +84,6 @@ To use the random initial weights file for training as per the original code, se
 To use the weight files that you have trained yourself, set load_name = save_name.
 
 Not all plotting features have been supported in the update. The code still successfully plots the spike monitors at the end of the file. Plotting for the plot_2d_input_weights() and plot_performance() functions as well as the population rate monitors and spike monitor before simulation begins are not supported. These have been commented out in the code so their functionality is still visible. They are not required for recreating the experiments in the paper.
-
-A simple timer feature has also been added.
 
 
 ## Observations
