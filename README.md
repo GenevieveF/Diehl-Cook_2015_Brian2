@@ -2,8 +2,7 @@
 
 This is an updated version of the original code written by Peter U. Diehl to work with Brian 2 and Python 3.
 
-Original Paper: Diehl & Cook, 'Unsupervised learning of digit recognition using spike-timing-dependent plasticity', 2015
-
+Original Paper: Diehl & Cook, 'Unsupervised learning of digit recognition using spike-timing-dependent plasticity', 2015  
 Link: https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/fncom.2015.00099/full
 
 Original Code: https://github.com/peter-u-diehl/stdp-mnist
@@ -17,8 +16,8 @@ This code requires Python 3, Brian 2, and the MNIST dataset.
 
 Installation instructions for Brain 2 can be found here: https://briansimulator.org/
 
-The MNIST dataest can be found here: http://yann.lecun.com/exdb/mnist/
-\nCreate a folder named 'MNIST' alongside the python files and extract the four .gz dataset files into it.
+The MNIST dataest can be found here: http://yann.lecun.com/exdb/mnist/  
+Create a folder named 'MNIST' alongside the python files and extract the four .gz dataset files into it.
 If you wish to place them in a different folder, be sure to update the MNIST_data_path variable in the 'Diehl&Cook_spiking_MNIST_B2.py' and 'Diehl&Cook_MNIST_evaluation_B2.py' files. 
 
 
@@ -40,13 +39,13 @@ For training a network:
 3. Set save_name to your preferred filename suffix for the saved weights and theta values. These will be saved to the 'weights/' folder.
 4. Run the code.
 
-For testing a network.
+For testing a network:
 1. Set test_mode = True on line 204 in 'Diehl&Cook_spiking_MNIST_B2.py'.
 2. Set load_name = save_name to use your trained weights. Set load_name = '' to run a test using the pre-trained weights from the original repository.
 3. Run the code.
 4. Result files for classification will be saved in the 'activity/' folder with num_examples as a suffix. Be sure to back them up somewhere safe if you do not wish for these to be over-written every time a new simulation is performed.
 
-For evaluating a network's classification performance.
+For evaluating a network's classification performance:
 1. In 'Diehl&Cook_MNIST_evaluation_B2.py' set training_ending = 'x' and testing_ending = 'y' where x is the number of examples used during training and y is the number of examples used during testing of the network. The defaults are x = '60000' and y = '10000'. To run the faster demo version as per the original code, set both to '10000' and read the note below.
 2. Run the code.
 
