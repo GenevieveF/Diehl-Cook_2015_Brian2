@@ -60,13 +60,13 @@ Training and testing a new network should result in around 89% with the given pa
 
 ## FAQ
 
-- How can I run this for networks with a different number of neurons?  
+- *How can I run this for networks with a different number of neurons?*  
 Change n_e on line 40 to your desired number of neurons. Uncomment line 403 and comment out lines 404 and 405. This will force the code to generate random weights to initialise the network rather than load the pre-generated 400 weights from a file.
 
-- Does this include all four of the STDP rules from the paper?  
+- *Does this include all four of the STDP rules from the paper?*  
 No, it only includes the Triplet STDP rule.
 
-- What are the hyperparameters for the other rules?  
+- *What are the hyperparameters for the other rules?*  
 They were not included in the paper or the original code. It is not clear what the STDP_offset variable was originally intended for.  
 
 
