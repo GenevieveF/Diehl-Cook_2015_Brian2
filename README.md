@@ -69,7 +69,7 @@ No, it only includes the Triplet STDP rule.
 - *What are the hyperparameters for the other rules?*  
 They were not included in the paper or the original code. It is not clear what the STDP_offset variable was originally intended for.
 
-- *The simulation is very slow on my computer, how can I make it faster?*
+- *The simulation is very slow on my computer, how can I make it faster?*  
 Consider changing the default clock step size for the simulation. This will have an effect on the precision of the numerical integration calculations but for values near the default will still produce similar accuracy results. More information on the default clock can be found in the Brian 2 documentation: https://brian2.readthedocs.io/en/stable/user/running.html
 
 
