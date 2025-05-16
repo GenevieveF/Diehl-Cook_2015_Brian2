@@ -61,7 +61,7 @@ Training and testing a new network should result in around 89% with the given pa
 ## FAQ
 
 - *How can I run this for networks with a different number of neurons?*  
-Change n_e on line 40 to your desired number of neurons. Uncomment line 403 and comment out lines 404 and 405. This will force the code to generate random weights to initialise the network rather than load the pre-generated 400 weights from a file.
+Change n_e on line 40 to your desired number of neurons. Uncomment line 404 and comment out lines 405 and 406. This will force the code to generate random weights to initialise the network rather than load the pre-generated 400 weights from a file.
 
 - *Does this include all four of the STDP rules from the paper?*  
 No, it only includes the Triplet STDP rule.
