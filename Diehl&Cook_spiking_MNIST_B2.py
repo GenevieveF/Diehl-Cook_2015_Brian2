@@ -267,6 +267,7 @@ weight_ee = 78.
 input_intensity = 2.
 delay_ee = 10. * b.ms
 delay_ie = 5. * b.ms
+rand_weight = 1
 start_input_intensity = input_intensity
 
 tc_pre_ee = 20*b.ms
