@@ -93,7 +93,6 @@ def normalize_weights():
     temp_conn.shape = (n_input, n_e) # new
     colSums = np.sum(temp_conn, axis = 0)
     colFactors = weight_ee/colSums
-    np.save(data_path + 'activity/neuron71', temp_conn[:,71])
     for j in range(n_e):
         temp_conn[:,j] *= colFactors[j]
     temp_conn.shape = (n_input * n_e)
