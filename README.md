@@ -85,6 +85,8 @@ To use the weight files that you have trained yourself, set load_name = save_nam
 
 Not all plotting features have been supported in the update. The code still successfully plots the spike monitors at the end of the file. Plotting for the plot_2d_input_weights() and plot_performance() functions as well as the population rate monitors and spike monitor before simulation begins are not supported. These have been commented out in the code so their functionality is still visible. They are not required for recreating the experiments in the paper.
 
+Update 26 May 2025: I have changed the eqs_stdp_ee equations for STDP learning to specify (event-driven) processing instead of (clock-driven) from the original code. This greatly improves execution times during training. 
+
 
 ## Observations
 
