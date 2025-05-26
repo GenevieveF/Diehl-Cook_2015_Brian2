@@ -317,9 +317,9 @@ neuron_eqs_i = '''
 eqs_stdp_ee = '''
                 w                                      : 1
                 post2before                            : 1
-                dpre1/dt   =   -pre1/(tc_pre_ee)       : 1 (clock-driven)
-                dpost1/dt  = -post1/(tc_post_1_ee)     : 1 (clock-driven)
-                dpost2/dt  = -post2/(tc_post_2_ee)     : 1 (clock-driven)
+                dpre1/dt   =   -pre1/(tc_pre_ee)       : 1 (event-driven)
+                dpost1/dt  = -post1/(tc_post_1_ee)     : 1 (event-driven)
+                dpost2/dt  = -post2/(tc_post_2_ee)     : 1 (event-driven)
             '''             # added w
 eqs_stdp_pre_ee = '''pre1 = 1
                   w -= nu_ee_pre * post1
