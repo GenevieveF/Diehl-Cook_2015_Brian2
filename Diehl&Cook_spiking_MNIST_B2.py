@@ -207,8 +207,8 @@ b.prefs.codegen.cpp.extra_compile_args_gcc = ['-ffast-math -march=native']  # up
 
 np.random.seed(0)
 save_name = '_savename'  # change this for saving thetas and weights each training run
-load_name = '_savename' # leave as '' to load pre-generated random weights from original repository
-    # or replace with save_name for loading weights for testing
+load_name = '_savename' # leave as '' to load pre-trained weights from original repository for testing
+    # or replace with save_name for loading user-trained weights for testing
 data_path = './'
 
 timer_start = datetime.now()
@@ -401,7 +401,7 @@ if ee_STDP_on: # defaults to method = 'exact', specified method = 'euler'
     conn_ee = b.Synapses(group_in, group_ne, eqs_stdp_ee, method='euler', on_pre = eqs_stdp_pre_ee, on_post = eqs_stdp_post_ee)
     conn_ee.connect()
     #conn_ee.w = 'rand()*rand_weight' # use for random weights
-    weightMatrix = get_matrix_from_file('weights/XeAe' + load_name + ending + '.npy') # loads pre-generated random initial weights
+    weightMatrix = get_matrix_from_file('random/XeAe' + ending + '.npy') # loads pre-generated random initial weights
     conn_ee.w = weightMatrix
 else:
     weightMatrix = get_matrix_from_file(weight_path + 'XeAe' + load_name + ending + '.npy')
