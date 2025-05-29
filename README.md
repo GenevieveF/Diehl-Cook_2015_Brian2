@@ -35,9 +35,8 @@ If you wish to place them in a different folder, be sure to update the MNIST_dat
 
 For training a network:
 1. Set test_mode = False on line 203 in 'Diehl&Cook_spiking_MNIST_B2.py'.
-2. Set load_name = '' to use the random initial weights file as per the original code. Alternatively set to save_name to load starting weights from weights you have previously trained.
-3. Set save_name to your preferred filename suffix for the saved weights and theta values. These will be saved to the 'weights/' folder.
-4. Run the code.
+2. Set save_name to your preferred filename suffix for the saved weights and theta values. These will be saved to the 'weights/' folder.
+3. Run the code.
 
 For testing a network:
 1. Set test_mode = True on line 203 in 'Diehl&Cook_spiking_MNIST_B2.py'.
